@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    * {
+        margin: 0;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        vertical-align: -4px;
+    }
+
+    .box7 span {
+        line-height: 16px;
+    }
+
+    .box2 {
+        width: 0;
+        height: 0;
+        border: 50px solid;
+        border-color: transparent #0f0 transparent transparent;
+        position: relative;
+    }
+
+    .box2::after {
+        content: '';
+        position: absolute;
+        right: -55px;
+        top: -50px;
+        border: 50px solid;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .box3 span {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+    }
+
+    .box4 {
+        height: 100px;
+        width: 100px;
+        border: 10px solid #000;
+        border-radius: 50%;
+    }
+
+    label {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        margin:25px;
+        background-color: #000;
+        opacity: 0;
+    }
+
+    .box4 input[type="checkbox"] {
+        display: none;
+    }
+
+    .box4 input[type="checkbox"]:checked + label {
+        opacity: 1;
+    }
+
+    .box5 {
+        height: 100px;
+        width: 100px;
+        border: 1px solid #000;
+        line-height: 100px;
+        /* text-align: center; */
+    }
+
+    .box6 {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        text-align: center;
+    }
+
+    .box7 span:last-child {
+        color: red;
+    }
+
+    .box7 span:first-child {
+        color: blue;
+    }
+
+    .box7 span:last-of-type {
+        color: pink;
+    }
+
+    .box8 {
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        /* border-left-color: red;
+        border-right-color: blanchedalmond;
+        border-top-color: yellow; */
+        border-bottom-color: blue;
+        position: relative;
+    }
+
+    .box8::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        border-bottom-color: #fff;
+        position: absolute;
+        top: -45px;
+        left: -50px;
+    }
+
+</style>
+
+<body>
+    <div class="box1">
+        <img src="./assest/me.png" alt="">
+        <span>百度一下百度一下百度一下百度一下百度一下百度一下百度一下百度一下百度一下百度一下</span>
+    </div>
+
+    <div class="box2"></div>
+
+    <div class="box3">
+        <span>1111</span><span>2222</span>
+    </div>
+
+    <div class="box4">
+        <input type="checkbox" id="chc">
+        <label for="chc"></label> 
+    </div>
+
+    <div class="box5">
+        <div class="box6">111</div>
+    </div>
+
+    <div class="box7">
+        <span>111</span>
+        <span>111</span>
+        <span>111</span>
+        <span>111</span>
+        <span>111</span>
+        <span>111</span>
+        <div>222</div>
+    </div>
+
+    <div class="box8">
+
+    </div>
+</body>
+</html>
